@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+  <link href="product-style.css" rel="stylesheet">
+  <script src="product-js.js"></script> 
+  </head>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-5">
+        <div class="main-image"><img id="thumbnail" src="https://i.imgur.com/xmAr8Xu.jpeg" alt=""> </div>
+    <div class="pic-center"> <img onclick="change_image(this)" src="https://i.imgur.com/xmAr8Xu.jpeg" > <img onclick="change_image(this)" src="https://i.imgur.com/9Ou7O0E.jpeg"> </div>
+      </div>
+      <div class="col-lg-7 col-md-7">
+        <div class="section-heading">
+  <h2 class="title">Cheeseburger</h2>
+          <h6 class="menuh6">32,00 Kn</h6>
+        </div>
+        <div class="section-body">
+          <p>A cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is placed on top of the meat patty. The cheese is usually added to the cooking hamburger patty shortly before serving, which allows the cheese to melt. Cheeseburgers can include variations in structure, ingredients and composition. As with other hamburgers, a cheeseburger may include toppings such as lettuce, tomato, onion, pickles, bacon, mayonnaise, ketchup, and mustard.</p>
+          <div class="quantity">
+      <input type="button" id="remove_0" onclick="CalculateTotal(this,0)" value="-" class="inp-pos">
+      <input type="text" placeholder="1" name="quantity" id="quantity_0" onchange="CalculateTotal(this,0)" class="inp-pos" value="1" readonly>
+      <input type="button" id="add_0" onclick="CalculateTotal(this,0)" value="+" class="inp-pos">
+            <button type="button"id="add-to-cart" class="btn btn-lg" data-toggle="modal" data-target="#myModal1">Dodaj<i class="material-icons cart">shopping_cart</i></button>
+          </div>
+          <div class="product-info">
+            <h4>Kategorija:</h4>
+            <ul>
+              <li><a href="" class="grey">Hrana</a></li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <h4>Tagovi:</h4>
+            <ul>
+              <li><a href="" class="grey">Hrana</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
